@@ -1,0 +1,222 @@
+{
+  "info": {
+    "_postman_id": "b73a1328-ddc1-4d99-85fe-3a8da8ca5f18",
+    "name": "Demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33007345"
+  },
+  "item": [
+    {
+      "name": "Get requests",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Own server",
+      "item": [
+        {
+          "name": "New Folder",
+          "item": []
+        },
+        {
+          "name": "Get route",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/get-route",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "get-route"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post route",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base-url}}/post-route",
+              "host": [
+                "{{base-url}}"
+              ],
+              "path": [
+                "post-route"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base-url}}/delete-route",
+              "host": [
+                "{{base-url}}"
+              ],
+              "path": [
+                "delete-route"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get route",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/get-route",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "get-route"
+              ]
+            },
+            "description": "This is a Get route using postman"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "External server",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": [
+            {
+              "name": "random user response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://api.freeapi.app/api/v1/public/randomusers?page=1&limit=10\n",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "freeapi",
+                    "app"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "public",
+                    "randomusers"
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "10\n"
+                    },
+                    {
+                      "key": "name",
+                      "value": "manojya",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx/1.18.0 (Ubuntu)"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 16 May 2026 10:23:31 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "10757"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "RateLimit-Limit",
+                  "value": "5000"
+                },
+                {
+                  "key": "RateLimit-Remaining",
+                  "value": "4997"
+                },
+                {
+                  "key": "RateLimit-Reset",
+                  "value": "413"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"2a05-xjkqHU4sNAeFPZX9uGNel7XPn8E\""
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"page\": 1,\n        \"limit\": 10,\n        \"totalPages\": 50,\n        \"previousPage\": false,\n        \"nextPage\": true,\n        \"totalItems\": 500,\n        \"currentPageItems\": 10,\n        \"data\": [\n            {\n                \"gender\": \"male\",\n                \"name\": {\n                    \"title\": \"Mr\",\n                    \"first\": \"Joseph\",\n                    \"last\": \"Evans\"\n                },\n                \"location\": {\n                    \"street\": {\n                        \"number\": 61,\n                        \"name\": \"Lunn Avenue\"\n                    },\n                    \"city\": \"Hastings\",\n                    \"state\": \"Otago\",\n                    \"country\": \"New Zealand\",\n                    \"postcode\": 92298,\n                    \"coordinates\": {\n                        \"latitude\": \"51.9039\",\n                        \"longitude\": \"-45.2357\"\n                    },\n                    \"timezone\": {\n                        \"offset\": \"-6:00\",\n                        \"description\": \"Central Time (US & Canada), Mexico City\"\n                    }\n                },\n                \"email\": \"joseph.evans@example.com\",\n                \"login\": {\n                    \"uuid\": \"9230749e-c285-41b4-9a0f-46dab2454b4e\",\n                    \"username\": \"angryzebra337\",\n                    \"password\": \"otis\",\n                    \"salt\": \"WiHweSpK\",\n                    \"md5\": \"2cc09194861ea12e8e842cdce5749230\",\n                    \"sha1\": \"aa808f8a4f03df53a427905ae690c677b2d68895\",\n                    \"sha256\": \"c857e62a617c9015a05b9ecc7f63e05c90042bd79514ca49bacfdf7e97b482d8\"\n                },\n                \"dob\": {\n                    \"date\": \"1968-07-21T10:02:51.768Z\",\n                    \"age\": 54\n                },\n                \"registered\": {\n                    \"date\": \"2019-01-31T10:09:35.816Z\",\n                    \"age\": 4\n                },\n                \"phone\": \"(612)-327-2806\",\n                \"cell\": \"(029)-082-3612\",\n                \"id\": 1,\n                \"picture\": {\n                    \"large\": \"https://randomuser.me/api/portraits/men/65.jpg\",\n                    \"medium\": \"https://randomuser.me/api/portraits/med/men/65.jpg\",\n                    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/65.jpg\"\n                },\n                \"nat\": \"NZ\"\n            },\n            {\n                \"gender\": \"female\",\n                \"name\": {\n                    \"title\": \"Ms\",\n                    \"first\": \"Hetal\",\n                    \"last\": \"Bharanya\"\n                },\n                \"location\": {\n                    \"street\": {\n                        \"number\": 234,\n                        \"name\": \"Gali Paranthe Wali\"\n                    },\n                    \"city\": \"Howrah\",\n                    \"state\": \"Madhya Pradesh\",\n                    \"country\": \"India\",\n                    \"postcode\": 12054,\n                    \"coordinates\": {\n                        \"latitude\": \"-89.7659\",\n                        \"longitude\": \"49.5620\"\n                    },\n                    \"timezone\": {\n                        \"offset\": \"+4:30\",\n                        \"description\": \"Kabul\"\n                    }\n                },\n                \"email\": \"hetal.bharanya@example.com\",\n                \"login\": {\n                    \"uuid\": \"03e1e369-138c-442b-a046-904d1cc13d76\",\n                    \"username\": \"happygoose680\",\n                    \"password\": \"insanity\",\n                    \"salt\": \"rYfUWfpZ\",\n                    \"md5\": \"fa9549419b5ac6ca748d0513ec625553\",\n                    \"sha1\": \"b7f374368f6d8be2f9880037b5bf6c3c76c1db2e\",\n                    \"sha256\": \"5c61e253e05d64a713020566d872b07890d74f347c430974c7e86897bf6ed781\"\n                },\n                \"dob\": {\n                    \"date\": \"1990-10-29T13:51:49.805Z\",\n                    \"age\": 32\n                },\n                \"registered\": {\n                    \"date\": \"2007-04-04T09:22:55.620Z\",\n                    \"age\": 16\n                },\n                \"phone\": \"7517215828\",\n                \"cell\": \"8993504716\",\n                \"id\": 2,\n                \"picture\": {\n                    \"large\": \"https://randomuser.me/api/portraits/women/47.jpg\",\n                    \"medium\": \"https://randomuser.me/api/portraits/med/women/47.jpg\",\n                    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/47.jpg\"\n                },\n                \"nat\": \"IN\"\n            },\n            {\n                \"gender\": \"female\",\n                \"name\": {\n                    \"title\": \"Mrs\",\n                    \"first\": \"Tanja\",\n                    \"last\": \"Španović\"\n                },\n                \"location\": {\n                    \"street\": {\n                        \"number\": 1663,\n                        \"name\": \"Vojvode Mišića\"\n                    },\n                    \"city\": \"Lebane\",\n                    \"state\": \"Prizren\",\n                    \"country\": \"Serbia\",\n                    \"postcode\": 88087,\n                    \"coordinates\": {\n                        \"latitude\": \"-26.3541\",\n                        \"longitude\": \"52.2337\"\n                    },\n                    \"timezone\": {\n                        \"offset\": \"-6:00\",\n                        \"description\": \"Central Time (US & Canada), Mexico City\"\n                    }\n                },\n                \"email\": \"tanja.spanovic@example.com\",\n                \"login\": {\n                    \"uuid\": \"d37482c4-28c3-4d6e-b591-6c1a7059defc\",\n                    \"username\": \"greentiger564\",\n                    \"password\": \"calgary\",\n                    \"salt\": \"giy1GclZ\",\n                    \"md5\": \"ec60e7838514036315af596a3f465c3c\",\n                    \"sha1\": \"dd79140034db5b5fa55896f3a7dee55d3b3b384d\",\n                    \"sha256\": \"42fdb899d4443d01815fb27c146223c2ad9ce9ad12fc488015c5cadd52881104\"\n                },\n                \"dob\": {\n                    \"date\": \"1960-01-02T04:11:38.488Z\",\n                    \"age\": 63\n                },\n                \"registered\": {\n                    \"date\": \"2018-06-15T09:02:58.581Z\",\n                    \"age\": 4\n                },\n                \"phone\": \"039-7503-456\",\n                \"cell\": \"064-2952-510\",\n                \"id\": 3,\n                \"picture\": {\n                    \"large\": \"https://randomuser.me/api/portraits/women/96.jpg\",\n                    \"medium\": \"https://randomuser.me/api/portraits/med/women/96.jpg\",\n                    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/96.jpg\"\n                },\n                \"nat\": \"RS\"\n            },\n            {\n                \"gender\": \"female\",\n                \"name\": {\n                    \"title\": \"Ms\",\n                    \"first\": \"Yori\",\n                    \"last\": \"Knot\"\n                },\n                \"location\": {\n                    \"street\": {\n                        \"number\": 1243,\n                        \"name\": \"Kastordreef\"\n                    },\n                    \"city\": \"Winterswijk Henxel\",\n                    \"state\": \"Utrecht\",\n                    \"country\": \"Netherlands\",\n                    \"postcode\": \"3305 DO\",\n                    \"coordinates\": {\n                        \"latitude\": \"-39.0490\",\n                        \"longitude\": \"88.6245\"\n                    },\n                    \"timezone\": {\n                        \"offset\": \"-3:30\",\n                        \"description\": \"Newfoundland\"\n                    }\n                },\n                \"email\": \"yori.knot@example.com\",\n                \"login\": {\n                    \"uuid\": \"a2dadb83-2e6a-4d12-ad80-2d35e84cfbfb\",\n                    \"username\": \"purpledog668\",\n                    \"password\": \"ilikeit\",\n                    \"salt\": \"zmeTOy1q\",\n                    \"md5\": \"48ecff0ad189ec56cc77cf08b95f6de8\",\n                    \"sha1\": \"ebae70d28b5cf4c2164dcf32f1dc33cf0c4e2f21\",\n                    \"sha256\": \"9af6004f46f05b9317bd780f18eb409fb22186f587850b48a62b7c12e45f0730\"\n                },\n                \"dob\": {\n                    \"date\": \"1963-10-03T14:59:37.860Z\",\n                    \"age\": 59\n                },\n                \"registered\": {\n                    \"date\": \"2007-05-08T12:35:56.245Z\",\n                    \"age\": 16\n                },\n                \"phone\": \"(096) 2598476\",\n                \"cell\": \"(06) 13040738\",\n                \"id\": 4,\n                \"picture\": {\n                    \"large\": \"https://randomuser.me/api/portraits/women/43.jpg\",\n                    \"medium\": \"https://randomuser.me/api/portraits/med/women/43.jpg\",\n                    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/43.jpg\"\n                },\n                \"nat\": \"NL\"\n            },\n            {\n                \"gender\": \"female\",\n                \"name\": {\n                    \"title\": \"Madame\",\n                    \"first\": \"Cäcilia\",\n                    \"last\": \"Lemoine\"\n                },\n                \"location\": {\n                    \"street\": {\n                        \"number\": 3778,\n                        \"name\": \"Montée du Chemin-Neuf\"\n                    },\n                    \"city\": \"Erlinsbach (Ag)\",\n                    \"state\": \"Schwyz\",\n                    \"country\": \"Switzerland\",\n                    \"postcode\": 1138,\n                    \"coordinates\": {\n                        \"latitude\": \"0.3904\",\n                        \"longitude\": \"-150.1322\"\n                    },\n                    \"timezone\": {\n                        \"offset\": \"-7:00\",\n                        \"description\": \"Mountain Time (US & Canada)\"\n                    }\n                },\n                \"email\": \"cacilia.lemoine@example.com\",\n                \"login\": {\n                    \"uuid\": \"569974f9-4921-4c5a-8031-f7bff6f41efc\",\n                    \"username\": \"beautifulrabbit185\",\n                    \"password\": \"bigtime\",\n                    \"salt\": \"RcUosVOt\",\n                    \"md5\": \"180077a1ef8cc1e9cf42860f645b3b2f\",\n                    \"sha1\": \"5269d29ebc80c8d73fe7a6383e838b054a760b51\",\n                    \"sha256\": \"1a4381f6625bb368ffa08ada211f7848acce2e2a418361899d8f91bd69578139\"\n                },\n                \"dob\": {\n                    \"date\": \"1970-04-26T10:23:24.025Z\",\n                    \"age\": 53\n                },\n                \"registered\": {\n                    \"date\": \"2020-07-15T11:41:59.706Z\",\n                    \"age\": 2\n                },\n                \"phone\": \"076 011 82 88\",\n                \"cell\": \"076 657 23 84\",\n                \"id\": 5,\n                \"picture\": {\n                    \"large\": \"https://randomuser.me/api/portraits/women/42.jpg\",\n                    \"medium\": \"https://randomuser.me/api/portraits/med/women/42.jpg\",\n                    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/42.jpg\"\n                },\n                \"nat\": \"CH\"\n            },\n            {\n                \"gender\": \"female\",\n                \"name\": {\n                    \"title\": \"Mrs\",\n                    \"first\": \"Nandita\",\n                    \"last\": \"Uchil\"\n                },\n                \"location\": {\n                    \"street\": {\n                        \"number\": 6826,\n                        \"name\": \"NAD X Rd\"\n                    },\n                    \"city\": \"Kozhikode\",\n                    \"state\": \"Tripura\",\n                    \"country\": \"India\",\n                    \"postcode\": 20318,\n                    \"coordinates\": {\n                        \"latitude\": \"-21.4486\",\n                        \"longitude\": \"-29.1084\"\n                    },\n                    \"timezone\": {\n                        \"offset\": \"+5:45\",\n                        \"description\": \"Kathmandu\"\n                    }\n                },\n                \"email\": \"nandita.uchil@example.com\",\n                \"login\": {\n                    \"uuid\": \"31ba6d47-92a5-447f-a48f-c7bab21a219c\",\n                    \"username\": \"goldenostrich181\",\n                    \"password\": \"soccer10\",\n                    \"salt\": \"El6b1cU3\",\n                    \"md5\": \"cb8ba0dba2c270e548fd9dc4fc00612b\",\n                    \"sha1\": \"fe9e3df57d56931472e2ead3e2ba0989660f4805\",\n                    \"sha256\": \"210321ab09bb38896ee7a616ba3a8fa0e0dd3f7cbcf93f185bdcc3715b842d4e\"\n                },\n                \"dob\": {\n                    \"date\": \"1978-10-01T00:33:31.775Z\",\n                    \"age\": 44\n                },\n                \"registered\": {\n                    \"date\": \"2018-03-16T16:46:33.627Z\",\n                    \"age\": 5\n                },\n                \"phone\": \"9450586544\",\n                \"cell\": \"9376723605\",\n                \"id\": 6,\n                \"picture\": {\n                    \"large\": \"https://randomuser.me/api/portraits/women/82.jpg\",\n                    \"medium\": \"https://randomuser.me/api/portraits/med/women/82.jpg\",\n                    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/82.jpg\"\n                },\n                \"nat\": \"IN\"\n            },\n            {\n                \"gender\": \"female\",\n                \"name\": {\n                    \"title\": \"Miss\",\n                    \"first\": \"Terri\",\n                    \"last\": \"Clark\"\n                },\n                \"location\": {\n                    \"street\": {\n                        \"number\": 3585,\n                        \"name\": \"College St\"\n                    },\n                    \"city\": \"Mildura\",\n                    \"state\": \"New South Wales\",\n                    \"country\": \"Australia\",\n                    \"postcode\": 7746,\n                    \"coordinates\": {\n                        \"latitude\": \"-40.3788\",\n                        \"longitude\": \"-164.7382\"\n                    },\n                    \"timezone\": {\n                        \"offset\": \"0:00\",\n                        \"description\": \"Western Europe Time, London, Lisbon, Casablanca\"\n                    }\n                },\n                \"email\": \"terri.clark@example.com\",\n                \"login\": {\n                    \"uuid\": \"25070c5d-4f32-4a60-8640-828282943624\",\n                    \"username\": \"smallladybug901\",\n                    \"password\": \"elway7\",\n                    \"salt\": \"gvoc7xk4\",\n                    \"md5\": \"2ebf82771d7ce990ad469ff4e9e80a27\",\n                    \"sha1\": \"f52933723cdaea82f9bffd11134a86ca2872036f\",\n                    \"sha256\": \"6b3dafbf3e244aa21f56fc59f631c7d7edd88189719089158df4e5d8775e329f\"\n                },\n                \"dob\": {\n                    \"date\": \"1989-11-13T19:26:57.752Z\",\n                    \"age\": 33\n                },\n                \"registered\": {\n                    \"date\": \"2021-08-02T19:56:17.949Z\",\n                    \"age\": 1\n                },\n                \"phone\": \"07-1746-8000\",\n                \"cell\": \"0466-518-535\",\n                \"id\": 7,\n                \"picture\": {\n                    \"large\": \"https://randomuser.me/api/portraits/women/59.jpg\",\n                    \"medium\": \"https://randomuser.me/api/portraits/med/women/59.jpg\",\n                    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/59.jpg\"\n                },\n                \"nat\": \"AU\"\n            },\n            {\n                \"gender\": \"male\",\n                \"name\": {\n                    \"title\": \"Mr\",\n                    \"first\": \"Dibach\",\n                    \"last\": \"Gocko\"\n                },\n                \"location\": {\n                    \"street\": {\n                        \"number\": 1883,\n                        \"name\": \"Ivana Pulyuya\"\n                    },\n                    \"city\": \"Popasna\",\n                    \"state\": \"Poltavska\",\n                    \"country\": \"Ukraine\",\n                    \"postcode\": 22060,\n                    \"coordinates\": {\n                        \"latitude\": \"23.5401\",\n                        \"longitude\": \"106.1507\"\n                    },\n                    \"timezone\": {\n                        \"offset\": \"+5:00\",\n                        \"description\": \"Ekaterinburg, Islamabad, Karachi, Tashkent\"\n                    }\n                },\n                \"email\": \"dibach.gocko@example.com\",\n                \"login\": {\n                    \"uuid\": \"b0c34ca5-20c1-47e6-b040-12d3de4a8b45\",\n                    \"username\": \"heavysnake675\",\n                    \"password\": \"wowwow\",\n                    \"salt\": \"jlHUGO4a\",\n                    \"md5\": \"478264ccf64d1fbf414c4c10fd9345fc\",\n                    \"sha1\": \"d9dc663a737b747137f56d76e4614b25a760c123\",\n                    \"sha256\": \"fce19f3106a0360176cfc8863e7bd22c8384867acbe1f7a21b93d4b07364e291\"\n                },\n                \"dob\": {\n                    \"date\": \"1981-07-13T07:30:31.046Z\",\n                    \"age\": 41\n                },\n                \"registered\": {\n                    \"date\": \"2020-06-15T06:00:13.939Z\",\n                    \"age\": 2\n                },\n                \"phone\": \"(096) Q51-1466\",\n                \"cell\": \"(097) H03-7594\",\n                \"id\": 8,\n                \"picture\": {\n                    \"large\": \"https://randomuser.me/api/portraits/men/97.jpg\",\n                    \"medium\": \"https://randomuser.me/api/portraits/med/men/97.jpg\",\n                    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/97.jpg\"\n                },\n                \"nat\": \"UA\"\n            },\n            {\n                \"gender\": \"female\",\n                \"name\": {\n                    \"title\": \"Ms\",\n                    \"first\": \"Virginia\",\n                    \"last\": \"Domínguez\"\n                },\n                \"location\": {\n                    \"street\": {\n                        \"number\": 3813,\n                        \"name\": \"Avenida de Andalucía\"\n                    },\n                    \"city\": \"Santa Cruz de Tenerife\",\n                    \"state\": \"Asturias\",\n                    \"country\": \"Spain\",\n                    \"postcode\": 30399,\n                    \"coordinates\": {\n                        \"latitude\": \"68.0499\",\n                        \"longitude\": \"-9.1692\"\n                    },\n                    \"timezone\": {\n                        \"offset\": \"0:00\",\n                        \"description\": \"Western Europe Time, London, Lisbon, Casablanca\"\n                    }\n                },\n                \"email\": \"virginia.dominguez@example.com\",\n                \"login\": {\n                    \"uuid\": \"63b2e547-b188-47f7-8a98-e173e0d0ced5\",\n                    \"username\": \"tinymeercat592\",\n                    \"password\": \"lander\",\n                    \"salt\": \"wdlOyzev\",\n                    \"md5\": \"d2dd087741f12a7dbef36df5e3294846\",\n                    \"sha1\": \"9d899ba14206c645557261b14572c9cdc13fcd1c\",\n                    \"sha256\": \"6d9cfd544a26c1bbb02903f0e0503da2242ada312abe31b62cd70393e5ff5643\"\n                },\n                \"dob\": {\n                    \"date\": \"1988-10-18T10:40:46.976Z\",\n                    \"age\": 34\n                },\n                \"registered\": {\n                    \"date\": \"2018-10-07T16:11:51.787Z\",\n                    \"age\": 4\n                },\n                \"phone\": \"950-457-280\",\n                \"cell\": \"663-396-994\",\n                \"id\": 9,\n                \"picture\": {\n                    \"large\": \"https://randomuser.me/api/portraits/women/60.jpg\",\n                    \"medium\": \"https://randomuser.me/api/portraits/med/women/60.jpg\",\n                    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/60.jpg\"\n                },\n                \"nat\": \"ES\"\n            },\n            {\n                \"gender\": \"male\",\n                \"name\": {\n                    \"title\": \"Mr\",\n                    \"first\": \"آراد\",\n                    \"last\": \"کوتی\"\n                },\n                \"location\": {\n                    \"street\": {\n                        \"number\": 6607,\n                        \"name\": \"میدان استقلال\"\n                    },\n                    \"city\": \"نیشابور\",\n                    \"state\": \"کردستان\",\n                    \"country\": \"Iran\",\n                    \"postcode\": 86893,\n                    \"coordinates\": {\n                        \"latitude\": \"30.4677\",\n                        \"longitude\": \"-147.4363\"\n                    },\n                    \"timezone\": {\n                        \"offset\": \"-6:00\",\n                        \"description\": \"Central Time (US & Canada), Mexico City\"\n                    }\n                },\n                \"email\": \"ard.khwty@example.com\",\n                \"login\": {\n                    \"uuid\": \"9cdb7909-ca96-46c5-89c4-5909db33c1d0\",\n                    \"username\": \"goldendog820\",\n                    \"password\": \"lucky\",\n                    \"salt\": \"7YOJGqxC\",\n                    \"md5\": \"57a78bf79f14747d8e4e4bfc8b88421c\",\n                    \"sha1\": \"0d1d7a5e577a6ad2f24e6197fdff5406561b485c\",\n                    \"sha256\": \"dac7bc7fcf5c3fc7fae006ae8a318908515c45d4dfd315063e1d406a96337f91\"\n                },\n                \"dob\": {\n                    \"date\": \"1960-04-09T12:58:36.692Z\",\n                    \"age\": 63\n                },\n                \"registered\": {\n                    \"date\": \"2016-11-19T20:27:01.344Z\",\n                    \"age\": 6\n                },\n                \"phone\": \"040-18679426\",\n                \"cell\": \"0955-789-0778\",\n                \"id\": 10,\n                \"picture\": {\n                    \"large\": \"https://randomuser.me/api/portraits/men/28.jpg\",\n                    \"medium\": \"https://randomuser.me/api/portraits/med/men/28.jpg\",\n                    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/28.jpg\"\n                },\n                \"nat\": \"IR\"\n            }\n        ]\n    },\n    \"message\": \"Random users fetched successfully\",\n    \"success\": true\n}"
+            }
+          ]
+        }
+      ],
+      "description": "This folder is for general understanding on Postman API\n"
+    }
+  ],
+  "variable": [
+    {
+      "key": "base-url",
+      "value": ""
+    }
+  ]
+}
